@@ -1,0 +1,121 @@
+.footer{
+	padding-top: 80px;
+}
+.footer-top .logo{
+    display: block;
+}
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 0;    
+}
+.footer-menu .nav-menu{
+    color: rgba(253, 253, 253, 1);
+}
+
+.footer-menu .nav-menu ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    column-gap: 60px;
+    row-gap: 10px;
+    text-transform: inherit;
+}
+
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: rgba(253, 253, 253, 1);
+}
+
+.footer-contacts .phone,
+.footer-contacts .mail{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-form {
+    width: 30%;
+    min-width: 200px;
+    border-radius: 50px;
+    background: rgba(241, 241, 241, 1);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.search-form input, .search-form button {
+    background: transparent;
+}
+.search-form input {
+    width: 90%;
+    height: 100%;
+}
+.search-form button {
+    padding: 0;
+    border: none;
+}
+.search-form button:hover{
+    border: inherit;
+}
+.footer-bottom{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(253, 253, 253, .5);
+    font-size: 15px;    
+}
+.footer-bottom button{
+    background-color: transparent;
+    border: 1px solid rgba(253, 253, 253, .3);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 24px;
+}
+.development {
+    display: flex;
+    gap: 20px;
+}
+.development p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 750px){
+    .footer{
+        padding-top: 40px;
+    }
+    .footer-menu{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 0;
+        gap: 28px;
+    }
+    .footer-contacts a{
+        font-size: 12px;
+        gap: 18px;
+    }
+    .footer-contacts a img{
+        width: 22px;
+        height: 22px;
+    }
+    .search-form{
+        width: 100%;
+    }
+    .footer-bottom{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        font-size: 12px;
+        padding: 30px 0;
+    }
+    .development img{
+        width: 53px;
+    }
+
+}

@@ -1,0 +1,33 @@
+.doc-content{
+    margin-bottom: 45px;
+}
+
+.doc-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+.doc-list li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 22px;
+}
+.nav-btns{
+    display: flex;
+    gap: 15px;
+}
+.nav-btns button{
+    padding: 10px 27px;
+}
+.prev{
+    background-color: transparent;
+    color: rgba(12, 140, 233, 1);
+    border: 1px solid rgba(12, 140, 233, .2);
+    transition: all 0.5s ease;
+}
+.prev:hover{
+    background-color: rgba(12, 140, 233, 1);
+    color: #fff;
+}

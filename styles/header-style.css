@@ -42,8 +42,34 @@
     border-right: 1px solid rgba(36, 36, 36, 0.2);
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.search-block{
+    transition: width 0.3s ease;
 }
 .search-block input{
+    width: 0;
+    height: 0;
+}
+.search-block.active{
+    width: 20%;
+    border-radius: 50px;
+    border: 1px solid rgba(36, 36, 36, 0.2);
+    padding: 10px 15px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(253, 253, 253, 1);
+}
+.search-block.active input{
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+.search-block.active + .contacts,
+.search-block.active + .message-block{
     display: none;
 }
 .header-contacts .contacts{
@@ -136,12 +162,13 @@
         background: transparent;
         margin-right: 0;
     }
-    .search-block a{
+    .search-block img{
         display: inline-block;
         margin-top: 5px;
     }
     .search-block input{
         width: 100%;
+        height: 100%;
         display: block;
         font-size: 16px;
         margin-left: 15px;

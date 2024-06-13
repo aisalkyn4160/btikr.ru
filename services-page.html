@@ -26,14 +26,10 @@
                     </nav>
                     <div class="header-contacts">
                        <div class="message-block">
-                            <a href="#">
-                                <img src="./assets/icons/message.svg" alt="message">
-                            </a>
+                             <img src="./assets/icons/message.svg" alt="message" class="show-popup">
                        </div>
-                        <div class="search-block">
-                            <a href="#">
-                                <img src="./assets/icons/search.svg" alt="search">
-                            </a>
+                        <div class="search-block ">
+                            <img src="./assets/icons/search.svg" alt="search" class="serch-icon">
                             <input type="text" placeholder="Поиск по сайту">
                         </div>
                         <div class="contacts">
@@ -94,6 +90,17 @@
                 </div>
             </div>
         </div>
+        <div class="popup">
+            <form>
+                <b class="close-form">+</b>
+                <h2>Оставьте заявку</h2>
+                <input type="text" placeholder="Ваше имя*" required>
+                <input type="tel" placeholder="Номер телефона*" required>
+                <textarea placeholder="Ваш комментарий"></textarea>
+                <span>Нажимая на кнопку, Вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a></span>
+                <button>Оставить заявку</button>
+            </form>
+        </div>
         <footer class="footer">
             <div class="container">
                 <div class="footer-top">
@@ -107,9 +114,9 @@
                             <ul>
                                 <li><a href="/index.html">О нас</a></li>
                                 <li><a href="/services-page.html">Услуги</a></li>
-                                <li><a href="">Застройщикам</a></li>
-                                <li><a href="">Проекты</a></li>
-                                <li><a href="">Документы</a></li>
+                                <li><a href="/">Застройщикам</a></li>
+                                <li><a href="/">Проекты</a></li>
+                                <li><a href="/">Документы</a></li>
                                 <li><a href="/contacts.html">Контакты</a></li>
                             </ul>
                         </nav>
@@ -132,7 +139,8 @@
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <a href="/feedback-page3.html"><button>Заказать звонок</button></a>
+                    <button class="show-popup">Заказать звонок</button>
+                    <a href="/feedback-page3.html"></a>
                     <span>© 2024  ООО «БТИКР» </span>
                     <a href="https://kontur-lite.ru" class="development">
                         <p>Создание сайтов <span>Продвижение сайтов</span></p>

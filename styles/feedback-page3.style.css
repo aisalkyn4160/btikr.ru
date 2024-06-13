@@ -14,6 +14,15 @@
     font-weight: 400;
     color: rgba(36, 36, 36, 0.5);
 }
+.file-block{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.file-block span{
+    font-size: 14px;
+    opacity: .5;
+}
 #file{
     width: .1px;
     height: .1px;
@@ -36,7 +45,10 @@
     color: rgba(12, 140, 233, 1);
     cursor: pointer;
     margin-top: 8px;
+    white-space: nowrap;
 }
+
+
 .checkbox-label{
     font-weight: 400;
     margin: 12px auto ;

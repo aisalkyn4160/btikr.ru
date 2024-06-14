@@ -18,16 +18,22 @@
     display: flex;
     gap: 15px;
 }
-.nav-btns button{
+.nav-btns .btn{
     padding: 10px 27px;
 }
-.prev{
+.btn.prev{
     background-color: transparent;
     color: rgba(12, 140, 233, 1);
     border: 1px solid rgba(12, 140, 233, .2);
     transition: all 0.5s ease;
 }
-.prev:hover{
+.btn.prev span{
+    background-color: rgba(12, 140, 233, 1);
+}
+.btn.prev:hover{
     background-color: rgba(12, 140, 233, 1);
     color: #fff;
+}
+.btn.prev:hover span{
+    background-color: #fff;
 }

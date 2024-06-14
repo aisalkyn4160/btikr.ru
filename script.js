@@ -14,11 +14,12 @@ burger.addEventListener("click", () => {
 const serchBlock = document.querySelector(".search-block");
 const serchIcon = document.querySelector(".serch-icon");
 const searchInp = document.querySelector(".search-block input");
+const searchClear = document.querySelector(".search-block .clear");
 
 if(window.innerWidth > 1010){
     serchIcon.addEventListener("click", () => {
-        serchBlock.classList.toggle("active");
-        if(serchBlock.classList.contains("active")){
+        serchBlock.classList.toggle("active-search");
+        if(serchBlock.classList.contains("active-search")){
             searchInp.focus();
         }else{
             searchInp.value = "";
@@ -26,6 +27,11 @@ if(window.innerWidth > 1010){
         
     })
 }
+
+searchClear.addEventListener("click", () => {
+    searchInp.value = "";
+    serchBlock.classList.remove("active-search");
+})
 // --------------------------------------------------------------------------------------------------------------
 
 function ready(){

@@ -97,8 +97,11 @@ a[disabled]{
     cursor: not-allowed;
     opacity: .5;
 }
-button[disabled]{
-    cursor: not-allowed;
-    pointer-events: none;
-    opacity: .5;    
+.btn.disabled-btn:hover{
+    background-color: rgba(12, 140, 233, 1);
+    color: rgba(253,253,253,1);
+
+}
+.btn.disabled-btn:hover span{
+    background-color: rgba(253,253,253,1);
 }

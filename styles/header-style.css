@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    
 }
 .header-content{
     width: 77%;
@@ -13,6 +14,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    position: relative;
+
 }
 .header .nav-menu{
     width: 70%;
@@ -34,25 +37,11 @@
     display: flex;
     justify-content: space-between;
 }
-
-.message-block,
-.search-block{
-    padding-right: 15px;
-    margin-right: 15px;
-    border-right: 1px solid rgba(36, 36, 36, 0.2);
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-.search-block{
-    transition: width 0.3s ease;
-    position: relative;
-}
-.search-block input{
-    width: 0;
-    height: 0;
-}
-.search-block .clear{
+ .search-block input,
+ .search-block .clear{
+    display: none;
+ }
+ .search-block .clear{
     display: none;
     font-size: 25px;
     cursor: pointer;
@@ -61,18 +50,28 @@
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
 }
+.message-block, .search-block{
+    width: 48px;
+    min-width: 48px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(36, 36, 36, .5);
+    transition: width .5s ease;
+}
 .search-block.active-search{
-    width: 20%;
+    width: 85%;
     border-radius: 50px;
     border: 1px solid rgba(36, 36, 36, 0.2);
     padding: 10px 15px;
     position: absolute;
-    top: 30px;
-    right: 0;
+    right: 150px;
     z-index: 10;
     background-color: rgba(253, 253, 253, 1);
 }
 .search-block.active-search input{
+    display: block;
     width: 100%;
     height: 100%;
     margin-left: 10px;
@@ -80,16 +79,16 @@
 }
 .search-block.active-search .clear{
     display: block;
-}
-.search-block.active-search + .contacts,
-.search-block.active-search + .message-block{
-    display: none;
-}
+} 
 .header-contacts .contacts{
-    width: max-content;
+    width: 135px;
     display: flex;
     flex-direction: column;
     gap: 7px;
+    margin-left: 15px;
+}
+.contacts a{
+    white-space: nowrap;
 }
 .phone,.mail{
     font-size: 15px;

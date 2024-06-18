@@ -80,6 +80,9 @@
 .search-block.active-search .clear{
     display: block;
 } 
+.show-popup, .serch-icon{
+    cursor: pointer;
+}
 .header-contacts .contacts{
     width: 135px;
     display: flex;
